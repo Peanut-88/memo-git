@@ -25,15 +25,23 @@ Avec GitHub comme tout le code est sur un serveur, il n'y a aucun risque de le p
 https://git-scm.com/
 
 ### Vérifier que Git est bien installer / Vérifier la version de git
-`$ git --version`
+```bash
+$ git --version
+```
 
 ### Configuration de l'utilisateur (l'option --global permet de le faire qu'une seule fois)
-`$ git config --global user.name "<Prénom et Nom>"`
+```bash
+$ git config --global user.name "<Prénom et Nom>"
+```
 
-`$ git config --global user.email "<Email>"`
+```bash
+$ git config --global user.email "<Email>"
+```
 
 ### Afficher info sur la configuration 
-`git config --list`
+```bash
+git config --list
+```
 
 
 
@@ -41,83 +49,148 @@ https://git-scm.com/
 ## Initialisation du projet
 
 ### Création d'un nouveau projet / dépot
-`$ git init` 
+```bash
+$ git init
+```
 Cette commande va créer un dossier caché nommé '.git'
 
 ### Afficher le repository GitHub vers lequel le Repository Local pointe
-`$ git remote -v `
+```bash
+$ git remote -v
+```
 
 ### Cloner un Repository (Récupération un Repository depuis GitHub)
-`git clone <URL du dépot / repository>`
+```bash
+$ git clone <URL du dépot / repository>`
+```
 
 ### Modifier la connection vers le repository GitHub (à utiliser si repository a été cloné)
-`$ git remote set-url origin <url> `
+```bash
+$ git remote set-url origin <url>
+```
 
 ### Ajouter la connection du repository GitHub (dans le cas où $ git remote -v  ne retourne rien), pour connecter le repository local à celui de GitHub
-`git remote add origin <github-repository-url>`
+```bash
+$ git remote add origin <github-repository-url>
+```
 
 
 
 ## Gestion des fichiers en Local
 ### Visualiser état des fichiers 
-`$ git status`
+```bash
+$ git status
+```
 
 ### Ajouter un fichier à l'index (Staging area)
-`$ git add -A`
+```bash
+$ git add -A
+```
 
 ### Ajouter tous les fichiers à l'index (Staging area)
-`$ git add <chemin du fichier>`
+```bash
+$ git add <chemin du fichier>
+```
 
 ### Retirer un fichier à l'index (Staging area)
-`$ git reset <chemin du fichier>`
+```bash
+$ git reset <chemin du fichier>
+```
 
 ### Ajouter un fichier au repository (Le commit se fait sur le repo en local)
-`$ git commit -m "<Commentaire>"`
+```bash
+$ git commit -m "<Commentaire>"
+```
 
 ### Modifier le commentaire du dernier commit
-`$ git commit --amend -m "<Commentaire modifié>"`
+```bash
+$ git commit --amend -m "<Commentaire modifié>"
+```
 
 ### Ajouter un fichier au dernier commit
-`$ git add fichierAAjouter.html`
-`$ git commit --amend --no-edit`
+```bash
+$ git add fichierAAjouter.html
+```
+```bash
+$ git commit --amend --no-edit
+```
 
 ### Restaurer un fichier modifié ou supprimé (Récupération de la dernière version du repository local)
-`$ git checkout --<nom du fichier>`
+```
+$ git checkout --<nom du fichier>
+```
 
 
 ## Repository GitHub
 ### Envoyer les changement sur GitHub
-`$ git push origin <nom de la branche> `(généralement branche = master = branche principale du projet / utilisé pour la production)
+```bash
+$ git push origin <nom de la branche> 
+```
+(généralement branche = master = branche principale du projet / utilisé pour la production)
 
 ### Récuperer la version du dépot / repoitory Github
-`$ git pull origin master`
+```bash
+$ git pull origin master
+```
  
  
 ## Les branches
 ### Lister les branches du repository
-`$ git branch`
+```bash
+$ git branch
+```
 
 ### Créer une nouvelle branche
-`$ git branch <nom de la branche>` La branche principale (master) est créé au premier comit d'un fichier
+```bash
+$ git branch <nom de la branche>
+``` 
+La branche principale (master) est créé au premier comit d'un fichier
 
 ### Supprimer une branche
-`$ git branch -d <nom de la branche>` Lorsqu'une branche n'est plus utile penser à la supprimer
+```bash
+$ git branch -d <nom de la branche>
+```
+Lorsqu'une branche n'est plus utile penser à la supprimer
 
 ### Se placer sur une branche
-`$ git checkout <nom de la branche>`
+```bash
+$ git checkout <nom de la branche>
+```
 
 ### Créer une branche et se placer dessus en une seule commande
-`$ git checkout -b <nom de la nouvelle branche>`
+```bash
+$ git checkout -b <nom de la nouvelle branche>
+```
 
 ### Merger une branche 'toto' à la branche principale
-`$ git checkout master` (Se placer sur la branche principale)
-`$ git merge toto` (pour merger)
-`$ git push origin master` (ensuite je peux envoyer sur repo github)
+```bash
+$ git checkout master
+``` 
+(Se placer sur la branche principale)
+
+```bash
+$ git merge toto
+``` (pour merger)
+```
+$ git push origin master
+``` (ensuite je peux envoyer sur repo github)
 
 
 
 ## Rappels ligne commande
-`$ pwd` print working directory, ou dossier courant
-`$ cd <Chemin>` Changer de chemin
-`$ mkdir <Nom dossier>` Créer un nouveau dossier
-`$ touch <Nom fichier>`: Créer un fichier
+```bash
+$ pwd
+``` 
+print working directory, ou dossier courant
+```bash
+$ cd <Chemin>
+``` 
+Changer de chemin
+```bash
+$ mkdir <Nom dossier>
+``` 
+Créer un nouveau dossier
+```bash
+$ touch <Nom fichier>
+``` 
+Créer un fichier
