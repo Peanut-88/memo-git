@@ -25,7 +25,7 @@ Avec GitHub comme tout le code est sur un serveur, il n'y a aucun risque de le p
 https://git-scm.com/
 
 ### Vérifier que Git est bien installer / Vérifier la version de git
-```bash
+```sh
 $ git --version
 ```
 
@@ -52,7 +52,7 @@ git config --list
 ```bash
 $ git init
 ```
-Cette commande va créer un dossier caché nommé '.git'
+Cette commande va créer un dossier caché nommé ".git"
 
 ### Afficher le repository GitHub vers lequel le Repository Local pointe
 ```bash
@@ -61,7 +61,7 @@ $ git remote -v
 
 ### Cloner un Repository (Récupération un Repository depuis GitHub)
 ```bash
-$ git clone <URL du dépot / repository>`
+$ git clone <URL du dépot / repository>
 ```
 
 ### Modifier la connection vers le repository GitHub (à utiliser si repository a été cloné)
@@ -164,17 +164,16 @@ $ git checkout -b <nom de la nouvelle branche>
 
 ### Merger une branche 'toto' à la branche principale
 ```bash
-$ git checkout master
-``` 
-(Se placer sur la branche principale)
+$ git checkout master // Se placer sur la branche principale
+```
 
 ```bash
-$ git merge toto
-``` (pour merger)
-```
-$ git push origin master
-``` (ensuite je peux envoyer sur repo github)
+$ git merge toto // Merge
+``` 
 
+```bash
+$ git push origin master // Envoie vers le repostory GitHub
+```
 
 
 ## Rappels ligne commande
