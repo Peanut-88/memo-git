@@ -177,19 +177,19 @@ $ git push origin master // Envoie vers le repostory GitHub
 
 
 ## Rappels ligne commande
-```bash
-$ pwd
+```bash 
+$ pwd // Print working directory, ou dossier courant
 ``` 
-print working directory, ou dossier courant
+
 ```bash
-$ cd <Chemin>
+$ cd <Chemin> // Changer de chemin
 ``` 
-Changer de chemin
+
 ```bash
-$ mkdir <Nom dossier>
+$ mkdir <Nom dossier> // Créer un nouveau dossier
 ``` 
-Créer un nouveau dossier
+
 ```bash
-$ touch <Nom fichier>
+$ touch <Nom fichier> // Créer un fichier
 ``` 
-Créer un fichier
+
