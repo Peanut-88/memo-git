@@ -25,7 +25,7 @@ Avec GitHub comme tout le code est sur un serveur, il n'y a aucun risque de le p
 https://git-scm.com/
 
 ### Vérifier que Git est bien installer / Vérifier la version de git
-```sh
+```bash
 $ git --version
 ```
 
