@@ -1,14 +1,16 @@
 # Mémo Git - Ligne de commande
 
 
-Git est un outil de gestion de version décentralisée.
+**Git** est un outil de gestion de version décentralisée.
 Il permet tracer les modifications et d'organiser un projet.
 Il est par exemple possible grâce à git de connaître la raison de chaque modification, et si un bug est détecté après un developpement de revenir à une version antérieur.
 Cet outil facilite également le travail collaboratif, et permet de savoir quand a été réalisé une modification et par qui.
 
-GitHub est un service permettant d'héberger du code dans ce qu'on appel un dépot ou Repository (autres services similaires : GitBucket, GitLab...).
+**GitHub** est un service permettant d'héberger du code dans ce qu'on appel un dépot ou Repository (autres services similaires : GitBucket, GitLab...).
 Avec ce dépot centralisé, chaque développeur peut accéder au code du projet.
 Avec GitHub comme tout le code est sur un serveur, il n'y a aucun risque de le perdre par accident.
+
+
 
 
 ## Les différents espaces
@@ -17,8 +19,7 @@ Avec GitHub comme tout le code est sur un serveur, il n'y a aucun risque de le p
 * Repository (L'historique) : espace dans lequel se trouve les fichiers que j'ai décidé de partager (après un commit)
 
 
-### Installation et configuration 
-https://git-scm.com/
+## Installation et configuration 
 
 ### Installation de Git
 https://git-scm.com/
@@ -28,6 +29,7 @@ https://git-scm.com/
 
 ### Configuration de l'utilisateur (l'option --global permet de le faire qu'une seule fois)
 `$ git config --global user.name "<Prénom et Nom>"`
+
 `$ git config --global user.email "<Email>"`
 
 ### Afficher info sur la configuration 
@@ -35,10 +37,12 @@ https://git-scm.com/
 
 
 
+
 ## Initialisation du projet
 
 ### Création d'un nouveau projet / dépot
-`$ git init` Cette commande va créer un dossier caché nommé '.git'
+`$ git init` 
+Cette commande va créer un dossier caché nommé '.git'
 
 ### Afficher le repository GitHub vers lequel le Repository Local pointe
 `$ git remote -v `
@@ -114,13 +118,6 @@ https://git-scm.com/
 
 ## Rappels ligne commande
 `$ pwd` print working directory, ou dossier courant
-
 `$ cd <Chemin>` Changer de chemin
-
 `$ mkdir <Nom dossier>` Créer un nouveau dossier
 `$ touch <Nom fichier>`: Créer un fichier
-
-## Divers
-Fork Copie d'un projet open source sur github
-Nom de la branche principal : master, c'est sur cette branche que l'on veut toutes le modifications
-Créer une nouvelle branche lors du développement d'une nouvelle fonctionnalité. Lorsque ce développement est terminé et testé, cette branche pourra être fusionné avec la branche principal (master)
