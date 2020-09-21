@@ -127,13 +127,13 @@ $ git checkout -- .
 
 
 ## Repository GitHub
-### Envoyer les changement sur GitHub
+### Envoyer les changements sur GitHub (Repository local -> Repository Github)
 ```bash
 $ git push origin <nom de la branche> 
 ```
 (généralement branche = master = branche principale du projet / utilisé pour la production)
 
-### Récuperer la version du dépot / repoitory Github
+### Récuperer la version du dépot / repository Github (Repository Github -> Repository local)
 ```bash
 $ git pull origin master
 ```
