@@ -84,12 +84,12 @@ $ git status
 
 ### Ajouter un fichier à l'index (Staging area)
 ```bash
-$ git add -A
+$ git add <chemin du fichier>
 ```
 
 ### Ajouter tous les fichiers à l'index (Staging area)
 ```bash
-$ git add <chemin du fichier>
+$ git add -A
 ```
 
 ### Retirer un fichier à l'index (Staging area)
@@ -122,7 +122,7 @@ $ git checkout --<nom du fichier>
 
 ### Restaurer tous les fichiers
 ```
-$ git checkout --.
+$ git checkout -- .
 ```
 
 
