@@ -120,6 +120,11 @@ $ git commit --amend --no-edit
 $ git checkout --<nom du fichier>
 ```
 
+### Restaurer tous les fichiers
+```
+$ git checkout --.
+```
+
 
 ## Repository GitHub
 ### Envoyer les changement sur GitHub
