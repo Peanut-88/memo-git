@@ -102,6 +102,11 @@ $ git reset <chemin du fichier>
 $ git commit -m "<Commentaire>"
 ```
 
+### Ajouter un fichier à l'index et au repository en une seule commande
+```bash
+$ git commit -am "<Commentaire>"
+```
+
 ### Modifier le commentaire du dernier commit
 ```bash
 $ git commit --amend -m "<Commentaire modifié>"
