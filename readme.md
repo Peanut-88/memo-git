@@ -136,7 +136,8 @@ $ git checkout -- .
 ```bash
 $ git push origin <nom de la branche> 
 ```
-(généralement branche = master = branche principale du projet / utilisé pour la production)
+généralement branche = master = branche principale du projet / utilisé pour la production
+Il est possible de push sur une branche non existante, elle sera automatiquement créée.
 
 ### Récuperer la version du dépot / repository Github (Repository Github -> Repository local)
 ```bash
